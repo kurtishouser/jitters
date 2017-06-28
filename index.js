@@ -17,11 +17,13 @@ const countries = require('./src/routes/countries');
 const regions = require('./src/routes/regions');
 const producers = require('./src/routes/producers');
 const coffee = require('./src/routes/coffee');
+const middleware = require('./src/routes/middleware');
 
 app.use(countries);
 app.use(regions);
 app.use(producers);
 app.use(coffee);
+app.use(middleware);
 
 app.use((req, res) => {
   res.sendStatus(404);
