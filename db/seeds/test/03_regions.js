@@ -7,7 +7,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           country_id: 2,
-          name: 'Yirga Cheffe',
+          name: 'Yirgacheffe',
           lat: 6.1620447,
           long: 38.2058155,
           created_at: new Date('2017-06-23 14:56:16 UTC'),
@@ -37,24 +37,6 @@ exports.seed = function(knex, Promise) {
           name: 'Popayán',
           lat: 2.4448143,
           long: -76.6147395,
-          created_at: new Date('2017-06-23 14:56:16 UTC'),
-          updated_at: new Date('2017-06-23 14:56:16 UTC')
-        },
-        {
-          id: 5,
-          country_id: 227,
-          name: 'Mount Elgon',
-          lat: 1.1492924,
-          long: 34.5417619,
-          created_at: new Date('2017-06-23 14:56:16 UTC'),
-          updated_at: new Date('2017-06-23 14:56:16 UTC')
-        },
-        {
-          id: 6,
-          country_id: 89,
-          name: 'Cobán',
-          lat: 15.4650586,
-          long: -90.3842527,
           created_at: new Date('2017-06-23 14:56:16 UTC'),
           updated_at: new Date('2017-06-23 14:56:16 UTC')
         }])

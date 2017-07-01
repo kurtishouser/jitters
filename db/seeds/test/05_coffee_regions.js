@@ -32,20 +32,6 @@ exports.seed = function(knex, Promise) {
           region_id: 4,
           created_at: new Date('2017-06-23 14:56:16 UTC'),
           updated_at: new Date('2017-06-23 14:56:16 UTC')
-        },
-        {
-          id: 5,
-          coffee_id: 1,
-          region_id: 5,
-          created_at: new Date('2017-06-23 14:56:16 UTC'),
-          updated_at: new Date('2017-06-23 14:56:16 UTC')
-        },
-        {
-          id: 6,
-          coffee_id: 5,
-          region_id: 6,
-          created_at: new Date('2017-06-23 14:56:16 UTC'),
-          updated_at: new Date('2017-06-23 14:56:16 UTC')
         }])
         .then(() => {
           return knex.raw("SELECT setval('coffee_regions_id_seq', (SELECT MAX(id) FROM coffee_regions));");
